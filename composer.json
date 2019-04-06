@@ -1,13 +1,13 @@
 {
-    "name": "skeeks/js-text-to-active-links",
-    "description": "Conversion of inactive links in the text into active clickable links on js",
+    "name": "skeeks/yii2-text-to-active-links",
+    "description": "Conversion of inactive links in the text into active clickable links",
     "keywords": [
         "text",
         "links"
     ],
     "homepage": "https://cms.skeeks.com",
     "license": "BSD-3-Clause",
-    "type": "library",
+    "type": "yii2-extension",
     "support": {
         "authors": "https://skeeks.com"
     },
@@ -18,11 +18,12 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "yiisoft/yii2": "^2.0 || dev-master",
+        "skeeks/sx": "^1.4.1.1 || dev-master"
     },
     "autoload": {
         "psr-4": {
-            "skeeks\\textToActiveLinks\\": "src/"
+            "skeeks\\yii2\\textToActiveLinks\\": "src/"
         }
     }
 }
