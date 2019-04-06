@@ -7,7 +7,7 @@ Conversion of inactive links in the text into active clickable links
 
 https://cms.skeeks.com/~crm/crm/crm-task/view?pk=440
 https://cms.skeeks.com/~crm/crm/crm-task/view?pk=407
-
+https://skeeks.com/~crm/crm/crm-task/view?pk=464 - пропадает первая ссылка
 
 Installation
 ------------
