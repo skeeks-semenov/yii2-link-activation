@@ -19,7 +19,7 @@
     ],
     "require": {
         "yiisoft/yii2": "^2.0 || dev-master",
-        "skeeks/sx": "^1.4.1.1 || dev-master"
+        "skeeks/yii2-sx": "^1.4.1 || dev-master"
     },
     "autoload": {
         "psr-4": {

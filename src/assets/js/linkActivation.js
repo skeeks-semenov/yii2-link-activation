@@ -7,15 +7,26 @@
 
 (function(sx, $, _)
 {
+    /**
+     *
+     */
     sx.classes.LinkActivation = sx.classes.Component.extend({
 
-        _init: function()
+        /**
+         * @param id
+         * @param opts
+         */
+        construct: function(Selector, opts)
         {
+            opts = opts || {};
+            this.Selector = jquerySelector || false;
 
-        },
+            this.applyParentMethod(sx.classes.Component, 'construct', [opts]);
+        }
 
         _onDomReady: function()
         {
+            this.jQuerySelector = $(this.Selector);
 
         }
     });
