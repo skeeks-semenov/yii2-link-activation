@@ -5,6 +5,10 @@ Conversion of inactive links in the text into active clickable links
 
 Небольшой класс для преобразования неативных ссылок в тексте в активные.
 
+https://cms.skeeks.com/~crm/crm/crm-task/view?pk=440
+https://cms.skeeks.com/~crm/crm/crm-task/view?pk=407
+
+
 Installation
 ------------
 
