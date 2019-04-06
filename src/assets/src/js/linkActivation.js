@@ -41,17 +41,19 @@
                 console.log(jQueryTextWrapper);
 
 
-                $("a[href^='http']", jQueryTextWrapper).wrapAll("<span class='sx-link'></span>");
+                $("a[href^='http']", jQueryTextWrapper).wrap("<span class='sx-link'></span>");
                 /*$("a[href^='https']", jQueryTextWrapper).wrapAll("<span class='sx-link'></span>");*/
-                $("a[href^='ftp']", jQueryTextWrapper).wrapAll("<span class='sx-link'></span>");
+                $("a[href^='ftp']", jQueryTextWrapper).wrap("<span class='sx-link'></span>");
 
                 $(".sx-link", jQueryTextWrapper).each(function () {
                     var textLink = ("a", $(this)).text();
-                    $(this).empty();
-                    $(this).append(textLink + " ");
+                    $(this).empty().append(textLink + " ");
                 });
 
                 var text = jQueryTextWrapper.html();
+                console.log(text);
+
+
                 text = text.replace(new RegExp("<br>",'g'), " <br> ");
 
                 //var text = jQueryTextWrapper.html();
