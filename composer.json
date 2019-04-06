@@ -1,5 +1,5 @@
 {
-    "name": "skeeks/yii2-text-to-active-links",
+    "name": "skeeks/yii2-link-activation",
     "description": "Conversion of inactive links in the text into active clickable links",
     "keywords": [
         "text",
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "skeeks\\yii2\\textToActiveLinks\\": "src/"
+            "skeeks\\yii2\\linkActivation\\": "src/"
         }
     }
 }

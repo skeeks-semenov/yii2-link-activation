@@ -27,14 +27,14 @@ Usage
 
 ```php
 <?
-    $handler = new \skeeks\textToActiveLinks\TextToActiveLinks();
+    $handler = new \skeeks\yii2\linkActivation\TextHandler();
     $handler->short_link_max_length = 45;
     echo $handler->correct($yourText);
 ?>
 ```
 
 ```php
-<?= (new \skeeks\textToActiveLinks\TextToActiveLinks())->correct($yourText); ?>
+<?= (new \skeeks\yii2\linkActivation\TextHandler())->correct($yourText); ?>
 ```
 ___
 
