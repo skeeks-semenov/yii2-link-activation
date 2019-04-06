@@ -1,0 +1,28 @@
+{
+    "name": "skeeks/js-text-to-active-links",
+    "description": "Conversion of inactive links in the text into active clickable links on js",
+    "keywords": [
+        "text",
+        "links"
+    ],
+    "homepage": "https://cms.skeeks.com",
+    "license": "BSD-3-Clause",
+    "type": "library",
+    "support": {
+        "authors": "https://skeeks.com"
+    },
+    "authors": [
+        {
+            "name": "Semenov Alexander",
+            "email": "semenov@skeeks.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "skeeks\\textToActiveLinks\\": "src/"
+        }
+    }
+}
