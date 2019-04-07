@@ -90,17 +90,19 @@
                 "(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))" +
                 "|" +
                 // host name
-                "(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)" +
+                "(?:(?:[a-z0-9]-*)*[a-z0-9]+)" +
+                //"(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)" +
                 // domain name
-                "(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*" + //~_
+                "(?:\.(?:[a-z0-9]-*)*[a-z0-9]+)*" + //~_
+                //"(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*" + //Берутся пробелы в том числе
 
 
 
                 // TLD identifier
                 //"(?:\.(?:[a-z0-9]{2,}))" +
-                "(?:\.(?:[a-z0-9/?&_%=~-]{2,}))" + //http://sobirayka.ru.vps210.s7.h.skeeks.com/~sx/admin/admin-auth?_sx%5Bref%5D=%2F~sx
+                //"(?:\.(?:[a-z0-9/?&_%=~-]{2,}))" + //http://sobirayka.ru.vps210.s7.h.skeeks.com/~sx/admin/admin-auth?_sx%5Bref%5D=%2F~sx
 
-                "(?:\.(?:[a-z0-9/?&;_%=~-]{2,}))" + //http://alekseevamv.ru.vps211.s7.h.skeeks.com/~sx/cms/admin-settings?component=&amp;component=v3project%5Cthemes%5Cmega%5CThemeMegaSettings
+                //"(?:\.(?:[a-z0-9/?&;_%=~-]{2,}))" + //http://alekseevamv.ru.vps211.s7.h.skeeks.com/~sx/cms/admin-settings?component=&amp;component=v3project%5Cthemes%5Cmega%5CThemeMegaSettings
                 //"(?:\.(?:[/]{2,}))" +
                 // sorry, ignore TLD ending with dot
                  //"\.?" +
