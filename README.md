@@ -11,7 +11,7 @@ Installation
 ------------
 
 ```sh
-$ composer require skeeks/text-to-active-links "^0.0.3"
+$ composer require skeeks/yii2-link-activation "^0.0.3"
 ```
 
 Or add this to your `composer.json` file:
@@ -19,7 +19,7 @@ Or add this to your `composer.json` file:
 ```json
 {
     "require": {
-        "skeeks/text-to-active-links": "^0.0.3"
+        "skeeks/yii2-link-activation": "^0.0.3"
     }
 }
 ```
