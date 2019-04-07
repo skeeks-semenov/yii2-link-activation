@@ -5,12 +5,6 @@ Conversion of inactive links in the text into active clickable links
 
 Небольшой класс для преобразования неативных ссылок в тексте в активные.
 
-https://cms.skeeks.com/~crm/crm/crm-task/view?pk=440
-https://cms.skeeks.com/~crm/crm/crm-task/view?pk=407
-https://skeeks.com/~crm/crm/crm-task/view?pk=464 - пропадает первая ссылка
-https://skeeks.com/~crm/crm/crm-task/view?pk=456 - лишний слеш
-https://skeeks.com/~crm/crm/crm-task/view?pk=335 - 
-
 Installation
 ------------
 
@@ -42,6 +36,14 @@ Usage
 ```php
 <?= (new \skeeks\yii2\linkActivation\TextHandler())->correct($yourText); ?>
 ```
+
+
+https://cms.skeeks.com/~crm/crm/crm-task/view?pk=440
+https://cms.skeeks.com/~crm/crm/crm-task/view?pk=407
+https://skeeks.com/~crm/crm/crm-task/view?pk=464 - пропадает первая ссылка
+https://skeeks.com/~crm/crm/crm-task/view?pk=456 - лишний слеш
+https://skeeks.com/~crm/crm/crm-task/view?pk=335 - 
+
 ___
 
 > [![skeeks!](https://skeeks.com/img/logo/logo-no-title-80px.png)](https://skeeks.com)  
