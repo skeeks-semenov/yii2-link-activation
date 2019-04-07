@@ -66,15 +66,6 @@ Backend replace
 ```
 
 
-
-
-
-https://cms.skeeks.com/~crm/crm/crm-task/view?pk=440
-https://cms.skeeks.com/~crm/crm/crm-task/view?pk=407
-https://skeeks.com/~crm/crm/crm-task/view?pk=464 - пропадает первая ссылка
-https://skeeks.com/~crm/crm/crm-task/view?pk=456 - лишний слеш
-https://skeeks.com/~crm/crm/crm-task/view?pk=335 - 
-
 ___
 
 > [![skeeks!](https://skeeks.com/img/logo/logo-no-title-80px.png)](https://skeeks.com)  
