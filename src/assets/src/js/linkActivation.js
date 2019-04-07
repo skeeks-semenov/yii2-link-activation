@@ -57,7 +57,7 @@
                 text = text.replace(new RegExp("<br>",'g'), " <br> ");
 
                 //var text = jQueryTextWrapper.html();
-                var replaced = text.replace(self.getRegex(), '<a href="$&" target="_blank">$&</a>');
+                var replaced = text.replace(self.getRegex(), '<a href="$&" target="_blank" data-pjax="0">$&</a>');
                 jQueryTextWrapper.empty().append(replaced);
 
 
