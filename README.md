@@ -38,8 +38,9 @@ JS
 ```
 ```html
 <div class="description">
-Каокй то текст со ссылками https://test.ru,
-http:://google.ru/search
+Какой то текст со ссылками https://test.ru,
+https://google.ru/search
+Все ссылки будут автоматически https://cms.skeeks.com/blog/releases/2-zapusk-sayta-dlya-skeeks-cms определены в этом тексте и станут кликабельными
 </div>
 ```
 
