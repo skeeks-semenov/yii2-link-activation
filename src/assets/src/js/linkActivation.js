@@ -35,10 +35,21 @@
 
             this.jQuerySelector = $(this.Selector);
 
-            this.jQuerySelector.each(function () {
-                var jQueryTextWrapper = $(this);
+            if ($.pjax) {
+                $(document).on('pjax:complete', function (e) {
+                    self._replace($(self.Selector, $(e.target)))
+                    return true;
+                });
+            }
 
-                console.log(jQueryTextWrapper);
+            this._replace(this.jQuerySelector);
+        },
+
+        _replace: function (jQuerySelector) {
+            var self = this;
+
+            jQuerySelector.each(function () {
+                var jQueryTextWrapper = $(this);
 
 
                 $("a[href^='http']", jQueryTextWrapper).wrap("<span class='sx-link'></span>");
@@ -54,13 +65,11 @@
                 //console.log(text);
 
 
-                text = text.replace(new RegExp("<br>",'g'), " <br> ");
+                text = text.replace(new RegExp("<br>", 'g'), " <br> ");
 
                 //var text = jQueryTextWrapper.html();
                 var replaced = text.replace(self.getRegex(), '<a href="$&" target="_blank" data-pjax="0">$&</a>');
                 jQueryTextWrapper.empty().append(replaced);
-
-
             });
         },
 
@@ -97,7 +106,6 @@
                 //"(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*" + //Берутся пробелы в том числе
 
 
-
                 // TLD identifier
                 //"(?:\.(?:[a-z0-9]{2,}))" +
                 //"(?:\.(?:[a-z0-9/?&_%=~-]{2,}))" + //http://sobirayka.ru.vps210.s7.h.skeeks.com/~sx/admin/admin-auth?_sx%5Bref%5D=%2F~sx
@@ -105,14 +113,13 @@
                 //"(?:\.(?:[a-z0-9/?&;_%=~-]{2,}))" + //http://alekseevamv.ru.vps211.s7.h.skeeks.com/~sx/cms/admin-settings?component=&amp;component=v3project%5Cthemes%5Cmega%5CThemeMegaSettings
                 //"(?:\.(?:[/]{2,}))" +
                 // sorry, ignore TLD ending with dot
-                 //"\.?" +
+                //"\.?" +
                 ")" +
                 // port number
                 "(?::\d{2,5})?"
                 // resource path, excluding a trailing punctuation mark
                 //+ "(?:[/?#](?:\S*[^\s!\"'()*,-.:;<>?\[\]_`{|}~]|))?"
                 , "gi"
-
             );
         }
 
