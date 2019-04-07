@@ -51,7 +51,7 @@
                 });
 
                 var text = jQueryTextWrapper.html();
-                console.log(text);
+                //console.log(text);
 
 
                 text = text.replace(new RegExp("<br>",'g'), " <br> ");
