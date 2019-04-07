@@ -65,6 +65,10 @@ Backend replace
 <?= (new \skeeks\yii2\linkActivation\TextHandler())->replace($yourText); ?>
 ```
 
+Scrinshot
+----------
+
+[<img src="https://skeeks.com/uploads/all/7c/cb/dc/7ccbdc8a1393cdb88d87635b610fb108.png" alt="SkeekS blog" width="600"/>](https://skeeks.com/uploads/all/7c/cb/dc/7ccbdc8a1393cdb88d87635b610fb108.png)
 
 Links
 ----------
