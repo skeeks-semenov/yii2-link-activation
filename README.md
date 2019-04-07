@@ -1,7 +1,7 @@
 Conversion of inactive links in the text
 ================
 
-[<img src="https://skeeks.com/uploads/all/20/9e/a0/209ea08c3331e48573e6acbff8981990/sx-filter__skeeks-cms-components-imaging-filters-Thumbnail/398dca5de4408ceacba2e33af114e652/kak-preobrazovat-neaktivnye-ssylki-v-tekste-v-aktivnye-klikabelnye.png?w=0&h=400" alt="SkeekS blog" width="200"/>](https://skeeks.com/blog/programming/397-kak-preobrazovat-neaktivnye-ssylki-v-tekste-v-aktivnye-klikabelnye)
+[<img src="https://skeeks.com/uploads/all/20/9e/a0/209ea08c3331e48573e6acbff8981990.png" alt="SkeekS blog" width="200"/>](https://skeeks.com/blog/programming/397-kak-preobrazovat-neaktivnye-ssylki-v-tekste-v-aktivnye-klikabelnye)
 
 A small extension to convert active links in the text to active (clickable).
 It can convert html or text, it is possible to convert on the client (js) as well as on the backend (php).
