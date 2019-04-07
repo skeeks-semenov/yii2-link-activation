@@ -7,6 +7,9 @@ It can convert html or text, it is possible to convert on the client (js) as wel
 Небольшое расширение для преобразования неактивных ссылок в тексте в активные (кликабельные).
 Может преобразовывать html или текст, возможно преобразовывать на клиенте (js) а так же на бэкенде (php).
 
+[![Latest Stable Version](https://poser.pugx.org/skeeks/yii2-link-activation/v/stable.png)](https://packagist.org/packages/skeeks/yii2-link-activation)
+[![Total Downloads](https://poser.pugx.org/skeeks/yii2-link-activation/downloads.png)](https://packagist.org/packages/skeeks/yii2-link-activation)
+
 Installation
 ------------
 
